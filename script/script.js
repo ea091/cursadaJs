@@ -6,7 +6,7 @@ function contarAlumnos(alumnos) {
 }
 
 
-function evaluarCursada(alumnos) {
+function posibleCursada(alumnos) {
   const cantidadAlumnos = contarAlumnos(alumnos);
   if (cantidadAlumnos >= cantidadNecesaria) {
     document.write("Felicitaciones tu cursada tiene las inscripciones suficientes!"+ "<br>");
@@ -23,5 +23,5 @@ for (let i=1; i <= 10; i+=1){
 }
 
 
-evaluarCursada(alumnosInscriptos);
+posibleCursada(alumnosInscriptos);
 document.write("Los alumnos que comenzaran el presente curso son:"+ "<br>" + alumnosInscriptos.join("<br>"));
