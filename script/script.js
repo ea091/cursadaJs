@@ -1,4 +1,4 @@
-const cantidadNecesaria = 2;
+const cantidadNecesaria = 10;
 
 // Función para contar la cantidad de alumnos inscriptos
 function contarAlumnos(alumnos) {
@@ -9,9 +9,9 @@ function contarAlumnos(alumnos) {
 function evaluarCursada(alumnos) {
   const cantidadAlumnos = contarAlumnos(alumnos);
   if (cantidadAlumnos >= cantidadNecesaria) {
-    console.log("La cursada puede iniciar, hay suficientes alumnos.");
+    document.write("La cursada puede iniciar, hay suficientes alumnos."+ "<br>");
   } else {
-    console.log("La cursada no puede iniciar, faltan alumnos.");
+    document.write("La cursada no puede iniciar, faltan alumnos.");
   }
 }
 
@@ -24,4 +24,4 @@ for (let i=1; i <= 10; i+=1){
 
 
 evaluarCursada(alumnosInscriptos);
-document.write("los alumnos que comenzaran el presente curso son:"+ "<br>" + alumnosInscriptos.join("<br>"));
+document.write("Los alumnos que comenzaran el presente curso son:"+ "<br>" + alumnosInscriptos.join("<br>"));
